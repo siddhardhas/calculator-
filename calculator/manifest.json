@@ -1,0 +1,19 @@
+{
+    "name": "calculator",
+    "version":"1.0",
+    "manifest_version":2,
+    "description":"",
+    "browser_action": {
+      "default_popup": "index.html"
+    },
+        
+        "content_scripts": [
+          {
+            "matches": ["<all_urls>"],
+            "css":["index.css"],
+            "html":["index.html"],
+            "js":["index.js"]
+            
+          }
+        ]
+        }

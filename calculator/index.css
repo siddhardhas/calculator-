@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+  }
+  
+  .calc {
+    width: 300px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #000;
+  }
+  
+  .calc__field {
+     
+      font-weight: 500;
+      padding: 0 10px;
+      overflow: auto;
+      height: 100px;
+      margin-bottom: 10px;
+      background: #fff;
+      text-align: right;
+      font-size: 30px;
+      line-height: 1.1;
+    
+  }
+  .calc__field span {
+    display: inline-block; 
+  }
+  .calc__field .operator {
+    margin: 0 6px;
+    color: red; 
+  }
+  .calc__operators {
+    color: red;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    border-top: 1px solid #DFDFDF; 
+  }
+  .calc__btn {
+      cursor: pointer;
+     
+      display: flex;
+    
+      justify-content: center;
+      width: 75px;
+      height: 75px;
+      border-right: 1px solid #DFDFDF;
+      border-bottom: 1px solid #DFDFDF;
+      font-size: 30px;
+      line-height: 35px;
+      font-weight: 500;
+      background: #F4F4F4;
+     
+  }
+  .calc__btn:nth-child(4n):not(.calc__btn--orange) {
+    border-right: none; 
+  }
+  .calc__btn:nth-last-child(2) {
+    border-right: none; 
+  }
+  .calc__btn--num {
+    color: #5A5A5A;
+    background: #fff; 
+  }
+  .calc__btn:hover {
+    transform:scale(1.10);
+    background: #DFDFDF;
+    color: #000; 
+  }
+  .calc__btn:active {
+    background-color: orangered;
+    box-shadow: 0 3px 7px green;
+    transform: translateY(4px);
+   }
+  .calc__btn--orange {
+    position: relative;
+    z-index: 2;
+    margin-top: -1px;
+    height: 76px;
+    color: #fff;
+    background: gainsboro;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom-color: white;
+    box-shadow: -1px 0px 0 0px white; 
+  }
+  .calc__btn--orange:hover {
+    background: #DFDFDF;
+    border-color: white;
+    box-shadow: -1px 0 0 0px white;
+    color: #fff; 
+  }
+  .calc__btn--orange:active {
+    background: #DFDFDF;
+    border-color: #DFDFDF;
+    box-shadow: -1px 0 0 0px #DFDFDF;
+    color: #fff; 
+  }
+  
+  .icon-clear {
+    
+    background-position: -55px 0px;
+    width: 26px;
+    height: 20px; 
+  }
+   
+  
+  .icon-reset {
+    
+    background-position: -91px -32px;
+    width: 18px;
+    height: 23px; }
+   
+  
+  .icon-division {
+    
+    background-position: -55px -30px;
+    width: 22px;
+    height: 22px; 
+  }
+   
+  .icon-percent {
+  
+    background-position: 0px -34px;
+    width: 22px;
+    height: 25px; }
+  
+  
+  .icon-multiplied {
+   
+    background-position: 0px -69px;
+    width: 20px;
+    height: 20px; }
+    
+  .icon-minus {
+  
+    background-position: -62px -69px;
+    width: 22px;
+    height: 4px; }
+    
+  .icon-plus {
+    
+    width: 22px;
+    height: 22px; }
+   
+  
+  .icon-equal {
+    color: red;
+    background-position: -30px -69px;
+    width: 22px;
+    height: 13px; }
+    
+  
+  .icon-plus-minus {
+    
+    background-position: 0px 0px;
+    width: 45px;
+    height: 24px; }
+   
+  
+  .icon-clear {
+   
+    background-position: -55px 0px;
+    width: 26px;
+    height: 20px; }
+
+  .close {
+      position: absolute;
+      right: 0px; 
+      color: white; 
+      background-color: black; 
+      cursor: pointer;
+  }
+  
